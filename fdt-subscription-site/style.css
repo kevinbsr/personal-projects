@@ -19,6 +19,7 @@
   --font-black: hsl(210, 11%, 15%);
 
   --brand-light: hsla(calc(var(--hue) + 4), 38%, 94%, 1);
+  --brand-dark: hsl(calc(var(--hue) - 11), 47%, 26%);
 }
 
 html {
@@ -77,6 +78,7 @@ img {
   font-size: 3.2rem;
   font-weight: 800;
   text-align: center;
+  margin-block: 2.4rem;
 }
 
 #home .cards .card {
@@ -86,6 +88,7 @@ img {
   border-radius: 0.4rem;
 
   background-color: var(--brand-light);
+  border: 1px solid hsl(calc(--hue) - 2, 14%, 85%);
 
   margin-block: 1.2rem;
 }
@@ -93,6 +96,8 @@ img {
 #home .cards .card h3 {
   color: var(--primary-color);
   margin-block: 1rem;
+  
+  font-size: 2rem;
 }
 
 #home .cards .card p {
@@ -115,6 +120,12 @@ img {
 
   background-color: var(--primary-color);
   border-radius: 4rem;
+
+  transition: background-color 0.2s;
+}
+
+#home .card .button:hover {
+  background-color: var(--brand-dark);
 }
 
 /*====== FOOTER =============================================*/
@@ -145,7 +156,8 @@ img {
   #img-desktop {
     display: block;
     max-width: 24rem;
-    
+    margin: 0;
+    padding-top: 2.4rem;
   }
 
   .container {
@@ -169,13 +181,7 @@ img {
     filter: initial;
   }
 
-  /* .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .card h3 {
+    font-size: 2.6rem;
   }
-
-  .card {
-    max-width: 57.4rem;
-  } */
 }
