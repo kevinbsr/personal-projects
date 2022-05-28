@@ -96,7 +96,7 @@ img {
 #home .cards .card h3 {
   color: var(--primary-color);
   margin-block: 1rem;
-  
+
   font-size: 2rem;
 }
 
@@ -119,7 +119,7 @@ img {
   padding: 1.6rem;
 
   background-color: var(--primary-color);
-  border-radius: 4rem;
+  border-radius: 0.4rem;
 
   transition: background-color 0.2s;
 }
@@ -146,7 +146,6 @@ img {
 
   .wrapper {
     width: min(112rem, 100%);
-    
   }
 
   #img-mobile {
